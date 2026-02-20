@@ -83,9 +83,9 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        "gradient-gold": "linear-gradient(135deg, hsl(43 90% 70%), hsl(30 85% 55%))",
-        "gradient-dark": "linear-gradient(180deg, hsl(220 40% 4%) 0%, hsl(220 35% 6%) 100%)",
-        "gradient-radial-gold": "radial-gradient(ellipse at center, hsl(43 90% 60% / 0.12) 0%, transparent 70%)",
+        "gradient-gold": "linear-gradient(135deg, hsl(270 85% 72%), hsl(262 80% 58%))",
+        "gradient-dark": "linear-gradient(180deg, hsl(248 30% 4%) 0%, hsl(248 28% 6%) 100%)",
+        "gradient-radial-gold": "radial-gradient(ellipse at center, hsl(262 80% 65% / 0.12) 0%, transparent 70%)",
       },
     },
   },
