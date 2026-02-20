@@ -20,15 +20,16 @@ export default function HeroSection() {
 
       {/* Subtle radial glow */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-10 right-1/4 w-48 h-48 rounded-full bg-gold/5 blur-3xl" />
-        <div className="absolute bottom-40 left-1/4 w-32 h-32 rounded-full bg-gold/5 blur-2xl" />
+        <div className="absolute top-10 right-1/4 w-64 h-64 rounded-full bg-primary/8 blur-3xl" />
+        <div className="absolute bottom-40 left-1/4 w-48 h-48 rounded-full bg-primary/6 blur-2xl" />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-primary/5 blur-3xl" />
       </div>
 
       <div className="container mx-auto px-6 flex flex-col items-center text-center page-enter relative z-10">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold/20 bg-gold/5 mb-8">
-          <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
-          <span className="text-xs text-gold tracking-wider">Alimenté par l'Intelligence Artificielle</span>
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/8 mb-8">
+          <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+          <span className="text-xs text-primary tracking-wider">Alimenté par l'Intelligence Artificielle</span>
         </div>
 
         {/* Heading */}
@@ -71,7 +72,7 @@ export default function HeroSection() {
       <div className="relative w-full max-w-6xl mx-auto px-6 animate-float z-10">
         <div
           className="relative rounded-2xl overflow-hidden border border-white/[0.08] shadow-2xl"
-          style={{ boxShadow: "0 40px 120px rgba(212, 160, 55, 0.08), 0 0 0 1px rgba(255,255,255,0.05)" }}
+          style={{ boxShadow: "0 40px 120px rgba(147, 90, 240, 0.12), 0 0 0 1px rgba(255,255,255,0.05)" }}
         >
           <img src={mockup} alt="Interface NextGen" className="w-full object-cover" />
           {/* Gradient overlay at bottom */}
