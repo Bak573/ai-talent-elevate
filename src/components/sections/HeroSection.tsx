@@ -4,9 +4,22 @@ import mockup from "@/assets/mockup.png";
 export default function HeroSection() {
   return (
     <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-0 overflow-hidden">
-      {/* Background radial glow */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-gradient-radial-gold opacity-60 blur-3xl" />
+      {/* Spline 3D background */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        {/* @ts-ignore */}
+        <spline-viewer
+          url="https://prod.spline.design/0whkBBSwtesFT90Q/scene.splinecode"
+          loading-anim-type="none"
+          style={{ width: "100%", height: "100%", position: "absolute", inset: 0 }}
+        />
+        {/* Dark overlay so text stays readable */}
+        <div className="absolute inset-0 bg-background/60" />
+        {/* Bottom fade into next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background to-transparent" />
+      </div>
+
+      {/* Subtle radial glow */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-10 right-1/4 w-48 h-48 rounded-full bg-gold/5 blur-3xl" />
         <div className="absolute bottom-40 left-1/4 w-32 h-32 rounded-full bg-gold/5 blur-2xl" />
       </div>
@@ -56,14 +69,11 @@ export default function HeroSection() {
 
       {/* Mockup image */}
       <div className="relative w-full max-w-6xl mx-auto px-6 animate-float z-10">
-        <div className="relative rounded-2xl overflow-hidden border border-white/[0.08] shadow-2xl"
+        <div
+          className="relative rounded-2xl overflow-hidden border border-white/[0.08] shadow-2xl"
           style={{ boxShadow: "0 40px 120px rgba(212, 160, 55, 0.08), 0 0 0 1px rgba(255,255,255,0.05)" }}
         >
-          <img
-            src={mockup}
-            alt="Interface NextGen"
-            className="w-full object-cover"
-          />
+          <img src={mockup} alt="Interface NextGen" className="w-full object-cover" />
           {/* Gradient overlay at bottom */}
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
         </div>
